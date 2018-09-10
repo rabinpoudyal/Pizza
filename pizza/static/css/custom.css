@@ -1,0 +1,23 @@
+.navbar{
+	background-color: #607d8b !important;
+}
+body{
+    background-color: #cacaca;
+    font-family: 'Montserrat', sans-serif;
+}
+.page-footer{
+    background-color: #28343e;
+    color: #fff;
+    margin-top: 5%;
+}
+a{
+    color: #607d8b;
+    text-decoration: none !important;
+}
+a:hover{
+    color: #536771;
+}
+.main-heading{
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
