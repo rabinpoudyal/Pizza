@@ -1,0 +1,17 @@
+{% extends "order/base_order.html" %}
+
+{% block title %}Order Pizza{% endblock %}
+
+{% block menu %}
+    <form action="#" method="post">{% csrf_token %}
+	{{ block.super }}
+	{% for field in pizza_form %}
+	    <div class="form_field">
+		{{ field.errors }}
+		{{ field.label_tag }}: {{ field }}
+	    </div>
+	{% endfor %}
+    <input type="submit" name="pizza" value="Update" />
+    </form>
+{% endblock %}
+

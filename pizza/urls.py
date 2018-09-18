@@ -19,5 +19,7 @@ from pizza.views import homepage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', homepage, name="root")
+    path('', homepage, name="root"),
+    path('accounts/', include('accounts.urls')),
+    path('order/', include('order.urls'))
 ]
